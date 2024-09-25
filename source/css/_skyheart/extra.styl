@@ -1,3 +1,4 @@
+// 阅读更多下划线
 .meta-v3
     .readmore
         position: relative
@@ -15,3 +16,15 @@
 
         &:hover::after
             width: 100%
+
+// 顶部菜单栏聚焦模糊
+ul.nav-list-h li
+    transition: 0.5s
+
+ul.nav-list-h:hover li
+    opacity: 0.2
+    filter: blur(2px)
+
+ul.nav-list-h li:hover
+    opacity: 1
+    filter: blur(0px)
